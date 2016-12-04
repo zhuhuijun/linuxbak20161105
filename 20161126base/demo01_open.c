@@ -10,6 +10,8 @@
 int main (void)
 {
 	char s[]="abc.txt";
+	close(STDOUT_FILENO);
+	int fd1=open("/dev/pts/1",O_WRONLY);
 	int fd=open(s,O_RDONLY);
 
 	if(fd==-1)
@@ -17,10 +19,13 @@ int main (void)
 		printf("%s\n",strerror(errno) );
 	}
 	else{
+		int i=0;
 		while(1)
 		{
-			printf("fd==%d\n",fd );
-			sleep(1);
+			i++;
+			printf("fd==%d,i=======%d\n",fd ,i);
+			//sleep(1);
+			usleep(1000);
 		}
 
 		close(fd);

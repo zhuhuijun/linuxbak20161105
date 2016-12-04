@@ -42,7 +42,7 @@ void run05()
 	Child child;
 }
 
-int main()
+int main01()
 {
 	cout<<"demo01_parent.cpp"<<endl;
 	run05();

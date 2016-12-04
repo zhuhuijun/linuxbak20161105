@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{0C44668E-92BB-45CE-8FDA-0AD70FC5C401}</ProjectGuid>
+    <ProjectGuid>{8A222225-2509-4EAE-A1BC-9607E9E6D6C3}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>ParentDemo</RootNamespace>
+    <RootNamespace>ExternDemo</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -75,13 +75,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Demo01_Parent.cpp" />
-    <ClCompile Include="demo02_jicheng.cpp" />
-    <ClCompile Include="demo03_jicheng.cpp" />
-    <ClCompile Include="demo04_jicheng.cpp" />
-    <ClCompile Include="demo05_jicheng.cpp" />
-    <ClCompile Include="demo06_static.cpp" />
-    <ClCompile Include="demo07_xigou.cpp" />
+    <ClCompile Include="demo01_extern.cpp" />
+    <ClCompile Include="demo02_静态.cpp" />
+    <ClCompile Include="demo03_多继承.cpp" />
+    <ClCompile Include="demo04_虚基类.cpp" />
+    <ClCompile Include="demo05_多态.cpp" />
+    <ClCompile Include="demo06_多态战机.cpp" />
+    <ClCompile Include="demo07_多态条件.cpp" />
+    <ClCompile Include="demo08_重载和重写.cpp" />
+    <ClCompile Include="mainclass.cpp" />
+    <ClCompile Include="mainclass02.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="demo01_extern.h" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
