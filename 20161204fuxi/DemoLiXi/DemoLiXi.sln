@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DemoLiXi", "DemoLiXi\DemoLiXi.vcxproj", "{50139BAE-A2B9-4677-B821-79813A24AD09}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DemoSocket", "DemoSocket\DemoSocket.vcxproj", "{050EE238-415A-4AED-8E3B-49AF12A6D400}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HanShuZhiZhen", "HanShuZhiZhen\HanShuZhiZhen.vcxproj", "{4542A5EE-57DA-4852-8F99-29604843763D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50139BAE-A2B9-4677-B821-79813A24AD09}.Debug|Win32.ActiveCfg = Debug|Win32
+		{50139BAE-A2B9-4677-B821-79813A24AD09}.Debug|Win32.Build.0 = Debug|Win32
+		{50139BAE-A2B9-4677-B821-79813A24AD09}.Release|Win32.ActiveCfg = Release|Win32
+		{50139BAE-A2B9-4677-B821-79813A24AD09}.Release|Win32.Build.0 = Release|Win32
+		{050EE238-415A-4AED-8E3B-49AF12A6D400}.Debug|Win32.ActiveCfg = Debug|Win32
+		{050EE238-415A-4AED-8E3B-49AF12A6D400}.Debug|Win32.Build.0 = Debug|Win32
+		{050EE238-415A-4AED-8E3B-49AF12A6D400}.Release|Win32.ActiveCfg = Release|Win32
+		{050EE238-415A-4AED-8E3B-49AF12A6D400}.Release|Win32.Build.0 = Release|Win32
+		{4542A5EE-57DA-4852-8F99-29604843763D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4542A5EE-57DA-4852-8F99-29604843763D}.Debug|Win32.Build.0 = Debug|Win32
+		{4542A5EE-57DA-4852-8F99-29604843763D}.Release|Win32.ActiveCfg = Release|Win32
+		{4542A5EE-57DA-4852-8F99-29604843763D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
