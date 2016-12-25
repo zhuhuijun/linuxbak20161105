@@ -18,5 +18,8 @@
     <ClCompile Include="demo01_vector.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="demo02_stack.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
