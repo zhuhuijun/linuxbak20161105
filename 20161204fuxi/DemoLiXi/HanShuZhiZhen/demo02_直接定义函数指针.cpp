@@ -17,6 +17,9 @@ typedef int Func(int);
 //定义一个指向函数类型的指针类型
 typedef int (*MyFunc)(int);
 //MyFunc aa;
+//用类型定义一个变量比较麻烦
+//直接定义一个函数指针并且赋值
+void (*myf)()=NULL;
 //函数名称代表函数的入口 ,函数名称本身就是一个地址
 int test(int a){
 	return a*a;
@@ -38,6 +41,7 @@ void main02(int argc,char *argv[])
 		printf("myret=============%d\n",ret);
 	}
 	{
+		//直接定义一个函数指针并且赋值
 		void (*myf)()=f;
 		void (*myf2)()=&f;
 		myf2();
