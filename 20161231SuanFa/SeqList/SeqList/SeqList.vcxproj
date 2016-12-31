@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{121CAEA5-1A60-4D83-843E-7DF22371909C}</ProjectGuid>
+    <ProjectGuid>{096DC038-DF60-4570-A4AB-70FA2836CA84}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>DemoSTL</RootNamespace>
+    <RootNamespace>SeqList</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -74,12 +74,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="demo01_vector.cpp" />
-    <ClCompile Include="demo02_stack.cpp" />
-    <ClCompile Include="demo03_queues.cpp" />
-    <ClCompile Include="demo04_list.cpp" />
-    <ClCompile Include="demo05_iterator.cpp" />
-    <ClCompile Include="demo06_algorithm.cpp" />
+    <ClInclude Include="seqlist.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="demo01_test.c" />
+    <ClCompile Include="seqlist.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

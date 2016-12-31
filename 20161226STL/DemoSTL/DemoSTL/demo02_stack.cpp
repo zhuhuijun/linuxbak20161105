@@ -31,7 +31,7 @@ void printArr(stack<int> &v)
 }
 
 //Ö÷º¯Êý
-void main(int argc,char *argv[])
+void main02(int argc,char *argv[])
 {
 	cout<<"hello,world!"<<endl;
 	stack<int> s;
