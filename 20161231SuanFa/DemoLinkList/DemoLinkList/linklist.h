@@ -4,16 +4,17 @@
 typedef void LinkList;
 
 typedef struct _tag_LinkListNode LinkListNode;
+
 struct _tag_LinkListNode
 {
 	LinkListNode* next;
 };
-
+/*
 typedef struct _tag_LinkListNode
 {
 	struct _tag_LinkListNode* next;
 }LinkListNode;
-
+*/
 LinkList* LinkList_Create();
 
 void LinkList_Destroy(LinkList* list);
