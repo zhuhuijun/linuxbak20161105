@@ -104,7 +104,7 @@ DLinkListNode* DLinkList_Delete(DLinklist* list, int pos){
 	{
 		DLinkListNode* current=(DLinkListNode*)sList;
 		DLinkListNode* next=NULL;
-		for(i=0;i<pos,i++){
+		for(i=0;i<pos;i++){
 			current=current->next;
 		}
 		ret=current->next;
