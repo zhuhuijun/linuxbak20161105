@@ -15,7 +15,7 @@ void main(int argc,char *argv[])
 	{
 		a[i]=i+1;
 		SeqStack_Push(stack,(void*)&a[i]);
-		SeqStack_Push(stack,(void*)(a+i));
+		//SeqStack_Push(stack,(void*)(a+i));
 	}
 	tmp = *((int *)SeqStack_Top(stack));
 	printf("stack top=%d\n",tmp);

@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7051C89C-985D-4145-8DEB-C7098ACF4526}</ProjectGuid>
+    <ProjectGuid>{30D9B3CC-2B47-4388-B0FC-68AA9237B501}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>SeqStack</RootNamespace>
+    <RootNamespace>LinkStack</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -74,13 +74,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="demo01_test.c" />
-    <ClCompile Include="seqlist.c" />
-    <ClCompile Include="seqstack.c" />
+    <ClInclude Include="linklist.h" />
+    <ClInclude Include="linkstack.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="seqlist.h" />
-    <ClInclude Include="seqstack.h" />
+    <ClCompile Include="demo01_test.c" />
+    <ClCompile Include="linklist.c" />
+    <ClCompile Include="linkstack.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
