@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{14AFC898-C4C2-4874-A505-25AA4BCD837E}</ProjectGuid>
+    <ProjectGuid>{4F1FF030-ADBD-4E08-91C6-8D53E021D88D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>DemoUseStack</RootNamespace>
+    <RootNamespace>DemoDuiLieLink</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -74,16 +74,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Demo01_栈的应用.c" />
-    <ClCompile Include="Demo02_中缀表达式.c" />
-    <ClCompile Include="demo02_中缀转后缀.c" />
-    <ClCompile Include="demo03_后缀计算.c" />
-    <ClCompile Include="linklist.c" />
-    <ClCompile Include="linkstack.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="linklist.h" />
-    <ClInclude Include="linkstack.h" />
+    <ClCompile Include="demo01_testmain.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

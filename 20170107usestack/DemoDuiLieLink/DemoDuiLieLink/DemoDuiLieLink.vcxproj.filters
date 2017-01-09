@@ -15,31 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="linklist.c">
+    <ClCompile Include="demo01_testmain.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="linkstack.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Demo01_栈的应用.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Demo02_中缀表达式.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="demo03_后缀计算.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="demo02_中缀转后缀.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="linklist.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="linkstack.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
