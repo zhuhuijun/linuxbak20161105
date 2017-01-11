@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{4F1FF030-ADBD-4E08-91C6-8D53E021D88D}</ProjectGuid>
+    <ProjectGuid>{DBC9D81B-9FDE-4688-8A86-8F21E2DBA675}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>DemoDuiLieLink</RootNamespace>
+    <RootNamespace>DemoTreeTwo</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -75,12 +75,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="demo01_testmain.c" />
-    <ClCompile Include="linklist.c" />
-    <ClCompile Include="linkqueue.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="linklist.h" />
-    <ClInclude Include="linkqueue.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -18,19 +18,5 @@
     <ClCompile Include="demo01_testmain.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="linkqueue.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="linklist.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="linklist.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="linkqueue.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
