@@ -1,12 +1,6 @@
 #include "stdlib.h"
 #include "stdio.h"
 #include "string.h"
-
-typedef struct BiTNode{
-	int data;
-	BiTNode* lchild;
-	BiTNode* rchild;
-}BiTNode;
 //三叉链表
 typedef struct TriTNode 
 {
@@ -33,9 +27,66 @@ typedef struct BPTree
 	int root; //根结点的位置 //注意此域存储的是父亲节点在数组的下标
 }BPTree;
 
+//二叉链表 
+typedef struct BiTNode
+{
+	int data;
+	struct BiTNode *lchild, *rchild; //左孩子 右孩子
+}BiTNode;
+
+void PreOrder(BiTNode *T)
+{
+	if (T != NULL)
+	{
+		printf("%d ", T->data);
+		PreOrder(T->lchild);
+		PreOrder(T->rchild);
+	}
+}
+void PostOrder(BiTNode *T)
+{
+	if (T != NULL)
+	{
+		PostOrder(T->lchild);
+		PostOrder(T->rchild);
+		printf("%d ", T->data);
+	}
+}
+void InOrder(BiTNode *T)
+{
+	if (T != NULL)
+	{
+		InOrder(T->lchild);
+		printf("%d ", T->data);
+		InOrder(T->rchild);
+	}
+}
+int g_count=0;
+void Count_Leaf(BiTNode* T){
+	if(T!=NULL)
+	{
+		if(T->lchild==NULL&&T->rchild==NULL){
+			g_count++;
+		}
+		Count_Leaf(T->lchild);
+		Count_Leaf(T->rchild);
+	}
+}
+void Count_Leaf2(BiTNode* T,int *ncount){
+	if(T!=NULL)
+	{
+
+		Count_Leaf2(T->lchild,ncount);
+		Count_Leaf2(T->rchild,ncount);
+		if(T->lchild==NULL&&T->rchild==NULL){
+			(*ncount) ++;
+		}
+	}
+}
 
 void main(int argc,char* argv[]){
 	BiTNode b1,b2,b3,b4,b5;
+	int mycount=0;
 	memset(&b1,0,sizeof(BiTNode));
 	memset(&b2,0,sizeof(BiTNode));
 	memset(&b3,0,sizeof(BiTNode));
@@ -53,7 +104,21 @@ void main(int argc,char* argv[]){
 	b2.lchild=&b4;
 	b3.lchild=&b5;
 
+	printf(">>>>>>>>>>>>>>>>>>>>先序遍历\n");
+	PreOrder(&b1);
 
+	printf("\n>>>>>>>>>>>>>>>>>>>>后根遍历\n");
+	PostOrder(&b1);
+	g_count=0;
+	Count_Leaf(&b1);
+	printf("\n树的叶子节点的个数:%d\n",g_count);
+	Count_Leaf2(&b1,&mycount);
+	printf("\n树的叶子节点的个数2:%d\n",mycount);
+	{
+		int ncoutn = 0;
+		Count_Leaf2(&b1, &ncoutn);
+		printf("\n叶子结点个数:%d\n", ncoutn);
+	}
 	printf("hello,world!\n");
 	system("pause");
 }
