@@ -83,8 +83,21 @@ void Count_Leaf2(BiTNode* T,int *ncount){
 		}
 	}
 }
+//求二叉树的深度
+int GetDepth(BiTNode* T)
+{
+	int depthav=0,depthL=0,depthR=0;
+	if(T==NULL){
+		depthav=0;
+		return depthav;
+	}
+	depthL=GetDepth(T->lchild);
+	depthR=GetDepth(T->rchild);
+	depthav=1+(depthL>depthR?depthL:depthR);
+	return depthav;
+}
 
-void main(int argc,char* argv[]){
+void main01(int argc,char* argv[]){
 	BiTNode b1,b2,b3,b4,b5;
 	int mycount=0;
 	memset(&b1,0,sizeof(BiTNode));
@@ -118,6 +131,10 @@ void main(int argc,char* argv[]){
 		int ncoutn = 0;
 		Count_Leaf2(&b1, &ncoutn);
 		printf("\n叶子结点个数:%d\n", ncoutn);
+	}
+	{
+		int dep = GetDepth(&b1);
+		printf("\n树的深度:%d\n", dep);
 	}
 	printf("hello,world!\n");
 	system("pause");

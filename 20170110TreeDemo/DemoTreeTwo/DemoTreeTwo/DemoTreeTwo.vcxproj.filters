@@ -18,5 +18,11 @@
     <ClCompile Include="demo01_testmain.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="demo02_二叉树的copy.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="demo03_二叉树的非递归算法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
