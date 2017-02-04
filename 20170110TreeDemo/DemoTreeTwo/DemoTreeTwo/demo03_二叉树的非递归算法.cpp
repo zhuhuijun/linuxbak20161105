@@ -41,7 +41,7 @@ void inOrder2(BiTNode* T){
 		}
 	}
 }
-void main(int argc,char* argv[]){
+void main03(int argc,char* argv[]){
 	BiTNode b1,b2,b3,b4,b5;
 	BiTNode* pnew=NULL;
 	int mycount=0;

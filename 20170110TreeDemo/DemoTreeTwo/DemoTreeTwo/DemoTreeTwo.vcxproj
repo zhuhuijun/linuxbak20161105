@@ -77,6 +77,7 @@
     <ClCompile Include="demo01_testmain.c" />
     <ClCompile Include="demo02_二叉树的copy.c" />
     <ClCompile Include="demo03_二叉树的非递归算法.cpp" />
+    <ClCompile Include="demo04_pointer.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
