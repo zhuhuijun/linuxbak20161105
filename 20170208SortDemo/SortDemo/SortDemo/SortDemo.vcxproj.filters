@@ -14,4 +14,18 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="demo01_选择排序.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="demo02_插入排序.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="demo03_冒泡.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="demo04_希尔排序.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>
