@@ -78,6 +78,12 @@
     <ClCompile Include="demo02_插入排序.c" />
     <ClCompile Include="demo03_冒泡.c" />
     <ClCompile Include="demo04_希尔排序.c" />
+    <ClCompile Include="demo05_快速排序.c" />
+    <ClCompile Include="demo06_归并排序.c" />
+    <ClCompile Include="printarr.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="printarr.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -27,5 +27,19 @@
     <ClCompile Include="demo04_希尔排序.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="demo05_快速排序.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="demo06_归并排序.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="printarr.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="printarr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
