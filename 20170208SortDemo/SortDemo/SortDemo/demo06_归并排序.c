@@ -1,12 +1,6 @@
 #include <stdio.h>
 #include <malloc.h>
 #include "printarr.h"
-void swap6(int array[], int i, int j)
-{
-	int temp = array[i];
-	array[i] = array[j];
-	array[j] = temp;
-}
 
 void Merge(int src[], int des[], int low, int mid, int high)
 {
