@@ -1,6 +1,6 @@
 .SUFFIXES: .c .o
 CC=gcc
-SRCS=demo09_fputs.c
+SRCS=demo09_fgets.c
 OBJS=$(SRCS:.c=.o)
 EXE=demo
 all: $(OBJS)
