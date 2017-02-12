@@ -32,7 +32,7 @@ void printfArray3(int a[10])
 	}
 }
 
-int main(int arg,char *argv[])
+int main01(int arg,char *argv[])
 {
 	//shif+delÉ¾³ıÒ»ĞĞ
 	int i = 0, j = 0;
