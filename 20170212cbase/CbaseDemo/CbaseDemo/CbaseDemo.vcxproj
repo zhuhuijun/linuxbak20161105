@@ -77,6 +77,14 @@
     <ClCompile Include="demo01.c" />
     <ClCompile Include="demo02_数据类型.c" />
     <ClCompile Include="demo03_间接指针.c" />
+    <ClCompile Include="demo04_内存四区.c" />
+    <ClCompile Include="demo05_堆栈的生长方向.c" />
+    <ClCompile Include="demo06_指针铁律1.c" />
+    <ClCompile Include="demo06_指针铁律102.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\c++\havaread\20140417\cltsocket01.h" />
+    <ClInclude Include="..\..\..\..\..\c++\havaread\20140417\cltsocket02.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

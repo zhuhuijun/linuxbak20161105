@@ -2,7 +2,7 @@
 #include "stdlib.h"
 #include "string.h"
 
-int main(int arg,char *args[])
+int main03(int arg,char *args[])
 {
 	int a=10;
 	int *p;

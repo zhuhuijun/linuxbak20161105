@@ -24,5 +24,25 @@
     <ClCompile Include="demo03_间接指针.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="demo04_内存四区.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="demo05_堆栈的生长方向.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="demo06_指针铁律1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="demo06_指针铁律102.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\c++\havaread\20140417\cltsocket02.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\c++\havaread\20140417\cltsocket01.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
