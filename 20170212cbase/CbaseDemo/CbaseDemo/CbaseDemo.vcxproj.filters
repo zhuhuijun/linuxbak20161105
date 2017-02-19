@@ -36,6 +36,15 @@
     <ClCompile Include="demo06_指针铁律102.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="demo07_指针铁律201.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="demo08_字符串课堂操练.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="demo09_字符串copy.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\c++\havaread\20140417\cltsocket02.h">

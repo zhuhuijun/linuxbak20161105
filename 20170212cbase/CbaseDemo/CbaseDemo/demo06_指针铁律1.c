@@ -23,7 +23,7 @@ void getData02(char **p2){
 //对指针参数的理解
 //从编译器的角度理解:对形参如果是指针类型,编译器只会分配四个自己的内存
 void sendData(char *p1);
-int main0600(int arg,char *args[])
+int main06fgg(int arg,char *args[])
 {
 	char *p1=NULL;
 	char **p2=NULL;
@@ -52,12 +52,13 @@ int main0600(int arg,char *args[])
 		char buf2[100]={0};
 		strcpy(buf1,"abcdefgh");
 		p1=buf1;
-		p2=buf2;
 		while(*p1!='\0'){
 			*p2=*p1;
 			 p2++;
 			 p1++;
 		}
+		//buf2=*p2;
+		//printf("%s",buf2);
 	}
 	system("pause");
 	return 1;

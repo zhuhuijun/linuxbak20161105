@@ -81,6 +81,9 @@
     <ClCompile Include="demo05_堆栈的生长方向.c" />
     <ClCompile Include="demo06_指针铁律1.c" />
     <ClCompile Include="demo06_指针铁律102.c" />
+    <ClCompile Include="demo07_指针铁律201.c" />
+    <ClCompile Include="demo08_字符串课堂操练.c" />
+    <ClCompile Include="demo09_字符串copy.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\c++\havaread\20140417\cltsocket01.h" />
