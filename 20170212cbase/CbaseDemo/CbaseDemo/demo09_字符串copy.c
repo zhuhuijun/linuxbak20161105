@@ -44,7 +44,7 @@ void copy_str5(char *from ,char *to){
 		;
 	}
 }
-int main(int arg,char *args[]){
+int main09(int arg,char *args[]){
 	int rv = 0;
 	char from[100]={0};
 	char to[100]={0};

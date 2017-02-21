@@ -84,6 +84,8 @@
     <ClCompile Include="demo07_指针铁律201.c" />
     <ClCompile Include="demo08_字符串课堂操练.c" />
     <ClCompile Include="demo09_字符串copy.c" />
+    <ClCompile Include="demo09_字符串工具.c" />
+    <ClCompile Include="demo10_两头堵.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\c++\havaread\20140417\cltsocket01.h" />
