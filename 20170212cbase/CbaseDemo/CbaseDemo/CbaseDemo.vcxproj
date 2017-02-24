@@ -86,6 +86,10 @@
     <ClCompile Include="demo09_字符串copy.c" />
     <ClCompile Include="demo09_字符串工具.c" />
     <ClCompile Include="demo10_两头堵.c" />
+    <ClCompile Include="demo11_字符串反转.c" />
+    <ClCompile Include="demo12_字符串练习.c" />
+    <ClCompile Include="demo13_字符串.c" />
+    <ClCompile Include="demo14_keyval.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\c++\havaread\20140417\cltsocket01.h" />

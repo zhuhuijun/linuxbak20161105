@@ -62,7 +62,7 @@ int trimspace_ok( char *mybuf,char *outbuf){
 	printf("icount =%d\n",icount);
 	return 0;
 }
-int main(int arg,char *args[]){
+int main10(int arg,char *args[]){
 	int ret;
 	//字符串可以在 堆 栈 常量区
 	char *p="            abcd          ";
