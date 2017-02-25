@@ -6,6 +6,20 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+void sort(int *src,int len){
+	int i,j,tmp;
+	for(i=0;i<len;i++){
+		for (j=0; j<len-1; j++)
+		{
+			/* code */
+			if(src[j]>src[j+1]){
+				tmp=src[j];
+				src[j]=src[j+1];
+				src[j+1]=tmp;
+			}
+		}
+	}
+}
 int main(int argc, char const *argv[])
 {
 	FILE *p1=fopen("a.txt","r");
@@ -22,6 +36,23 @@ int main(int argc, char const *argv[])
 		if(fgets(val,sizeof(val),p1)==NULL){
 			break;
 		}
+		buf[len]=atoi(val);
+		len++;
 	}
+	fclose(p1);
+
+	FILE *p2=fopen("b.txt","w");
+	if(p2==NULL){
+			printf("err is %s\n",strerror(errno) );
+		return -1;
+	}
+	sort(buf,len-1);
+	int i=0;
+	for(i=0;i<len;i++){
+		memset(val,0,sizeof(val));
+		sprintf(val,"%d\n",buf[i]);
+		fputs(val,p2);
+	}
+	fclose(p2);
 	return 0;
 }
