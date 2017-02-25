@@ -93,8 +93,8 @@
     <ClCompile Include="demo15_const.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\c++\havaread\20140417\cltsocket01.h" />
-    <ClInclude Include="..\..\..\..\..\c++\havaread\20140417\cltsocket02.h" />
+    <ClInclude Include="..\..\..\..\..\c++\havaread\realread\20140417\上午\cltsocket01.h" />
+    <ClInclude Include="..\..\..\..\..\c++\havaread\realread\20140417\上午\cltsocket02.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -42,7 +42,7 @@ int spitString(const char *buf1, const char c, char buf[10][30], int *mycount)
 	} while (*p != '\0');
 	*mycount=count;
 }
-int main(int arg,char *args[]){
+int main04(int arg,char *args[]){
 	char *p = "abcdef,acccd,eeee,aaaa,e3eeeee,sssss,";
 	char c = ',';
 	char buf[10][30];

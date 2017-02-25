@@ -30,5 +30,19 @@
     <ClCompile Include="demo04_两个辅助指针挖字符串.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="demo05_my01.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="demo06_my02.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\c++\havaread\realread\20140417\上午\cltsocket02.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\c++\havaread\realread\20140417\上午\cltsocket01.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

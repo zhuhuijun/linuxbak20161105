@@ -79,6 +79,12 @@
     <ClCompile Include="demo02_第二种内模型.c" />
     <ClCompile Include="demo03_第三种模型.c" />
     <ClCompile Include="demo04_两个辅助指针挖字符串.c" />
+    <ClCompile Include="demo05_my01.c" />
+    <ClCompile Include="demo06_my02.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\c++\havaread\realread\20140417\上午\cltsocket01.h" />
+    <ClInclude Include="..\..\..\..\..\c++\havaread\realread\20140417\上午\cltsocket02.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

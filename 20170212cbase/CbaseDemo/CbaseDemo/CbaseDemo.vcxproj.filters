@@ -68,10 +68,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\c++\havaread\20140417\cltsocket02.h">
+    <ClInclude Include="..\..\..\..\..\c++\havaread\realread\20140417\上午\cltsocket02.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\c++\havaread\20140417\cltsocket01.h">
+    <ClInclude Include="..\..\..\..\..\c++\havaread\realread\20140417\上午\cltsocket01.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
