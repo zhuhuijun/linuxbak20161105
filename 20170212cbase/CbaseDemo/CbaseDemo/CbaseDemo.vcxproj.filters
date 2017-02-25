@@ -63,6 +63,9 @@
     <ClCompile Include="demo14_keyval.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="demo15_const.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\c++\havaread\20140417\cltsocket02.h">

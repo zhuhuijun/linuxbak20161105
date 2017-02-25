@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{D00B6CDE-B94B-4571-A894-E8C21C537FFF}</ProjectGuid>
+    <ProjectGuid>{3FAF9CCD-911A-48A9-AE85-529B6DC8C6A1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>CbaseDemo</RootNamespace>
+    <RootNamespace>SecondPointer</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -74,27 +74,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="demo01.c" />
-    <ClCompile Include="demo02_数据类型.c" />
-    <ClCompile Include="demo03_间接指针.c" />
-    <ClCompile Include="demo04_内存四区.c" />
-    <ClCompile Include="demo05_堆栈的生长方向.c" />
-    <ClCompile Include="demo06_指针铁律1.c" />
-    <ClCompile Include="demo06_指针铁律102.c" />
-    <ClCompile Include="demo07_指针铁律201.c" />
-    <ClCompile Include="demo08_字符串课堂操练.c" />
-    <ClCompile Include="demo09_字符串copy.c" />
-    <ClCompile Include="demo09_字符串工具.c" />
-    <ClCompile Include="demo10_两头堵.c" />
-    <ClCompile Include="demo11_字符串反转.c" />
-    <ClCompile Include="demo12_字符串练习.c" />
-    <ClCompile Include="demo13_字符串.c" />
-    <ClCompile Include="demo14_keyval.c" />
-    <ClCompile Include="demo15_const.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\c++\havaread\20140417\cltsocket01.h" />
-    <ClInclude Include="..\..\..\..\..\c++\havaread\20140417\cltsocket02.h" />
+    <ClCompile Include="demo01_first.c" />
+    <ClCompile Include="demo01_第一种内存模型.c" />
+    <ClCompile Include="demo02_第二种内模型.c" />
+    <ClCompile Include="demo03_第三种模型.c" />
+    <ClCompile Include="demo04_两个辅助指针挖字符串.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

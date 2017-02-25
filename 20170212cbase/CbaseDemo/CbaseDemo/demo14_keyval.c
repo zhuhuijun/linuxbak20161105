@@ -53,7 +53,7 @@ int getKeyByValude(char *keyvaluebuf /*in*/,  char *keybuf  /*in*/,
 	return 0;
 }
 
-int main(int arg,char *args[]){
+int main14(int arg,char *args[]){
 	char keyvalbuf[]="oraclename=itcast";
 	char *keybuf="oraclename";
 	char valbuf[1024]={0};
