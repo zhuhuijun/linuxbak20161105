@@ -1,6 +1,6 @@
 .SUFFIXES: .c .o
 CC=gcc
-SRCS=demo02_myi2a.c
+SRCS=demo01_mysort.c
 OBJS=$(SRCS:.c=.o)
 EXE=demo
 all: $(OBJS)
