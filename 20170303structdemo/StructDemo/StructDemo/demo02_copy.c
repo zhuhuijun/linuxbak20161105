@@ -23,6 +23,7 @@ int main(int argc,char* args[]){
 	struct TeacherBak t1={"t1",34};
 	struct TeacherBak t2;
 	struct TeacherBak t3={"t3",34};
+	//结构体类型是复杂类型,结构体一出来就是一级指针
 	struct TeacherBak *p=NULL;
 	t2=t1;//这是"="操作不是初始化
 	p=&t1;
