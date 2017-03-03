@@ -3,7 +3,7 @@
 #include "string.h"
 
 //第一种内存模型
-int main01(int arg,char *args[]){
+int main0100000000000(int arg,char *args[]){
 	int i=0;
 	int j=0;
 	char *tmp=NULL;

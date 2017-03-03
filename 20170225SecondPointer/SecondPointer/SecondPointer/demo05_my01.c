@@ -43,21 +43,21 @@ int mySpitString(const char *buf1, const char c, char buf[10][30], int *mycount)
 	*mycount=count;
 	return 1;
 }
-int printArray52(char MyArray[10][30],int iNum){
+int printArray53(char MyArray[10][30],int iNum){
 	int i=0;
 	for(i=0;i<iNum;i++){
 		printf("%s ",MyArray[i]);
 	}
 	printf("\n");
 }
-int main05(int arg,char *args[]){
+int main050203030(int arg,char *args[]){
 	char *p = "abcdef,acccd,eeee,aaaa,e3eeeee,sssss,";
 	char c = ',';
 	char buf[10][30];
 	int ncount;
 	mySpitString(p,c,buf,&ncount);
 	printf("nocount:%d\n",ncount);
-	printArray52(buf,ncount);
+	printArray53(buf,ncount);
 	system("pause");
 	return 1;
 }
