@@ -76,6 +76,13 @@
   <ItemGroup>
     <ClCompile Include="demo01_struct基础.c" />
     <ClCompile Include="demo02_copy.c" />
+    <ClCompile Include="demo03_结构体数组.c" />
+    <ClCompile Include="demo04_结构体练习.c" />
+    <ClCompile Include="demo05_野指针.c" />
+    <ClCompile Include="demo06_用指针来代替数组.c" />
+    <ClCompile Include="demo07_结构体tigao.c" />
+    <ClCompile Include="demo08_结构体的copy.c" />
+    <ClCompile Include="demo09_结构体练习.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

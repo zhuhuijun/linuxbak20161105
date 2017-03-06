@@ -9,7 +9,9 @@ struct TeacherBak{
 	int age;
 };
 /************************************************************************/
-/* 第一种不使用指针的方式(结构体做函数参数时会退化成什么？)                                                                     */
+/* 第一种不使用指针的方式(结构体做函数参数时会退化成什么？)
+ * 这种是 没有作用的
+*/
 /************************************************************************/
 int copy01(struct TeacherBak from,struct TeacherBak to){
 	memcpy(&to,&from,sizeof(struct TeacherBak));
@@ -19,7 +21,7 @@ int copy02(struct TeacherBak *from,struct TeacherBak *to){
 	memcpy(to,from,sizeof(struct TeacherBak));
 	return 1;
 }
-int main(int argc,char* args[]){
+int main02020200202(int argc,char* args[]){
 	struct TeacherBak t1={"t1",34};
 	struct TeacherBak t2;
 	struct TeacherBak t3={"t3",34};
