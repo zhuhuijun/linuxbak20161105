@@ -33,7 +33,7 @@ int main01sdfsff(int arg,char *args[]){
 	system("pause");
 	return 1;
 }
-int main(int arg,char *args[]){
+int main00001(int arg,char *args[]){
 	struct Teacher t1={"fffff",6};
 	struct Teacher t2={"ddddd",23};
 	struct Teacher *p=NULL;

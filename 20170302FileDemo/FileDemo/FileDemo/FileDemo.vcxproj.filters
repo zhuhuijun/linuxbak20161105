@@ -18,5 +18,11 @@
     <ClCompile Include="demo01_结构体基础.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="demo02_FileDemo.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="demo03_按照行读写文件.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
