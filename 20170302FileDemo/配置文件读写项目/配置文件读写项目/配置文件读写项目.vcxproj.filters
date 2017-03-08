@@ -15,20 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo01_结构体基础.c">
+    <ClCompile Include="cfg_op.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="demo03_fgetc.c">
+    <ClCompile Include="test_interface.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="demo02_fputc.c">
+    <ClCompile Include="demo_03_接口封装功能抽象课堂演练.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="demo04_fgets.c">
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cfg_op.h">
       <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="demo05_练习文件.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
+    </ClInclude>
   </ItemGroup>
 </Project>

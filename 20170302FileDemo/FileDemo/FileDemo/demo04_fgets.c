@@ -10,51 +10,53 @@ fread() fwrite()//按照块读写文件   大数据块的迁移
 #include "stdlib.h"
 #include "string.h"
 //按照字符读写文件
-void main01(){
+void main03(){
 	int i;
 	FILE *fp = NULL;
+	char str[100];
 	//linux，win通用
 	char *filename="d:/1.txt";
 	char a[] = "zhuhjlinqq";
-	fp = fopen(filename,"a+");
+
+	fp = fopen(filename,"rb");
 	if (fp == NULL)
 	{
 		printf("func fopen() err\n");
 		return ;
 	}
 	// int fputc(int ch,FILE *stream);
-	for (i=0; i<strlen(a); i++)
-	{
-		fputc(a[i], fp);
+	while(!feof(fp)){
+		char *tt = fgets(str,10,fp);
+		if(tt != NULL){
+			printf("%s",str);
+		}
+
 	}
 	fclose(fp);
+
 }
-void main02(){
+void main04(){
 	int i;
 	FILE *fp = NULL;
 	char temp;
 	//linux，win通用
 	char *filename="d:/1.txt";
-	char a[] = "zhuhjlinqq";
+	char a[] = "123456789";
 	fp = fopen(filename,"a+");
 	if (fp == NULL)
 	{
 		printf("func fopen() err\n");
 		return ;
 	}
-	while(!feof(fp)){
-		temp=fgetc(fp);
-		printf("%c",temp);
-	}
+	fputs(a,fp);
 	fclose(fp);
 	printf("\n");
 }
 //按照字符读写文件
-int main033333333(int argc,char* argv[])
+int main400000(int argc,char* argv[])
 {
-	main01();
-	main02();
-	
+	main04();
+	main03();
 	system("pause");
 	return 1;
 

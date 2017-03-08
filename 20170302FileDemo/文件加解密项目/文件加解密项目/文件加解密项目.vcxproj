@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{A678B21A-9D64-4061-B275-83ADA7D9E363}</ProjectGuid>
+    <ProjectGuid>{095B8DF5-6B64-4549-B252-152195C1A14D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>FileDemo</RootNamespace>
+    <RootNamespace>文件加解密项目</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -74,11 +74,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="demo01_结构体基础.c" />
-    <ClCompile Include="demo02_fputc.c" />
-    <ClCompile Include="demo03_fgetc.c" />
-    <ClCompile Include="demo04_fgets.c" />
-    <ClCompile Include="demo05_练习文件.c" />
+    <ClCompile Include="copyfile.c" />
+    <ClCompile Include="des.c" />
+    <ClCompile Include="main_encdec.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="des.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
