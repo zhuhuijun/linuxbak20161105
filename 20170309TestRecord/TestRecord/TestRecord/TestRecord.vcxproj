@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{A678B21A-9D64-4061-B275-83ADA7D9E363}</ProjectGuid>
+    <ProjectGuid>{490009A9-2DCB-4BBE-9AA3-A203FD2EB10E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>FileDemo</RootNamespace>
+    <RootNamespace>TestRecord</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -74,16 +74,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="cfg_op.c" />
-    <ClCompile Include="demo01_结构体基础.c" />
-    <ClCompile Include="demo02_fputc.c" />
-    <ClCompile Include="demo03_fgetc.c" />
-    <ClCompile Include="demo04_fgets.c" />
-    <ClCompile Include="demo05_练习文件.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="cfg_op.h" />
-    <ClInclude Include="cfg_test.h" />
+    <ClCompile Include="test01_考试.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
