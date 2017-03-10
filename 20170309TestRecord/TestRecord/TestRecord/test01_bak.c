@@ -4,49 +4,49 @@
 /************************************************************************/
 /* ≈≈–ÚµƒÀ„∑®                                                                     */
 /************************************************************************/
-char ** sortArray(char *pArray1,int nArrayNum,char (*parry2)[30],int nArraynum2,int *narray3num)
+char **sortArray(char **pArray1,int nArray1Num,char (*pArray2)[30],int nArray2Num,int *nArray3Num)
 {
 	int i = 0;
 	int j = 0;
 	int k = 0;
 	char tmp[30]={0};
-	int leng = nArrayNum + nArraynum2;
+	int leng = nArray1Num + nArray2Num;
 
-	char **pTemp = (char **)malloc(  (nArrayNum+nArraynum2)*sizeof(char *));
+	char **pTmp = (char **)malloc(  leng*sizeof(char *));
 
 	for (i=0; i<leng; i++)
 	{
-		pTemp[i] = (char*)malloc(sizeof(char)*30);
-		memset(pTemp[i], 0, sizeof(char)*30   );
+		pTmp[i] = (char*)malloc(sizeof(char)*30);
+		memset(pTmp[i], 0, sizeof(char)*30   );
 	}
 
-	for (i=0;i<nArrayNum;i++)
+	for (i=0;i<nArray1Num;i++)
 	{
-		strcpy(pTemp[i], pArray1[i]);	
+		strcpy(pTmp[i], pArray1[i]);	
 	}
 
-	for (k = 0;k<nArraynum2; i++, k++){
-		strcpy(pTemp[i],parry2[k]);
+	for (k = 0;k<nArray2Num; i++, k++){
+		strcpy(pTmp[i],pArray2[k]);
 	}
 
 	for (i = 0; i<leng; i++)
 	{
 		for (j=i+1; j < leng; j++){
-			if(strcmp(pTemp[i],pTemp[j]) > 0){
-				strcpy(tmp,pTemp[i]);
-				strcpy (pTemp[i],pTemp[j]);
-				strcpy (pTemp[j] , tmp);
+			if(strcmp(pTmp[i],pTmp[j]) > 0){
+				strcpy(tmp,pTmp[i]);
+				strcpy (pTmp[i],pTmp[j]);
+				strcpy (pTmp[j] , tmp);
 			}
 		}
 	}
-	*narray3num = leng;
+	*nArray3Num = leng;
 
-	return pTemp;
+	return pTmp;
 }
 
 void free_arr(char** arr,int len){
 	int i=0;
-	if(arr = NULL){
+	if(arr == NULL){
 		return ;
 	}
 	for (i=0; i <len; i++)
@@ -60,7 +60,7 @@ void free_arr(char** arr,int len){
 	}
 }
 
-int mainbak(int argc,char* argv[])
+int main(int argc,char* argv[])
 {
 	int i=0;
 	char **pArray3 = NULL;
@@ -75,7 +75,7 @@ int mainbak(int argc,char* argv[])
 		printf("func sortArray error \n");
 	}
 	for(i=0;i<narray3Num;i++){
-		printf("%s",pArray3[i]);
+		printf("%s \n",pArray3[i]);
 	}
 	if(pArray3 != NULL)
 	{

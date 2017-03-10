@@ -64,7 +64,7 @@ void free_arr01(char** arr,int length)
 		free(arr);
 	}
 }
-void main()
+void main00()
 {
 
 	int i = 0;
