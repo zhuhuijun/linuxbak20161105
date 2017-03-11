@@ -3,7 +3,7 @@
 #include "string.h"
 
 //10 + 10 = 20
-char **sortArray1Array2_01(char **pArray1, int nArray1Num, char (*pArray2)[30], int nArray2Num,  int *nArray3Num)
+char **sortArray1Array2_03(char **pArray1, int nArray1Num, char (*pArray2)[30], int nArray2Num,  int *nArray3Num)
 {
 	//第一维
 	int length=nArray1Num+nArray2Num;
@@ -33,10 +33,10 @@ char **sortArray1Array2_01(char **pArray1, int nArray1Num, char (*pArray2)[30], 
 		{
 			if(strcmp(pTmp[i],pTmp[j])>0)
 			{
-				char tmp[30]={0};
-				strcpy(tmp,pTmp[i]);//内存空间的值进行复制
-				strcpy(pTmp[i],pTmp[j]);
-				strcpy(pTmp[j],tmp);
+				char *t = NULL;;
+				t = pTmp[i];//主调函数已经分配了内存
+				pTmp[i] = pTmp[j];//改变指针的指向
+				pTmp[j] = t;
 			}
 		}
 	}
@@ -45,7 +45,7 @@ char **sortArray1Array2_01(char **pArray1, int nArray1Num, char (*pArray2)[30], 
 	return pTmp;
 
 }
-void free_arr01(char** arr,int length)
+void free_arr03(char** arr,int length)
 {
 	int i=0;
 	if(arr==NULL)
@@ -64,7 +64,7 @@ void free_arr01(char** arr,int length)
 		free(arr);
 	}
 }
-void main00()
+char ** mainXXXXXX(int* nn)
 {
 
 	int i = 0;
@@ -76,7 +76,7 @@ void main00()
 	//二维数组
 	char array2[10][30] = {"zzzz", "yyyy", "333333"};
 
-	pArray3 = sortArray1Array2_01(array1, 6, array2, 3,  &nArray3Num);
+	pArray3 = sortArray1Array2_03(array1, 6, array2, 3,  &nArray3Num);
 	if (pArray3 == NULL)
 	{
 		printf("func sortArray1Array() err\n");
@@ -86,11 +86,19 @@ void main00()
 	{
 		printf("%s \n", pArray3[i]);
 	}
-	if(pArray3!=NULL)
+	*nn = nArray3Num;
+	return pArray3;
+
+}
+
+int main3000 (int argc, char* argv){
+	int nArray3Num = 0;
+	char **tm = mainXXXXXX(&nArray3Num);
+	if (tm != NULL)
 	{
-		free_arr01(pArray3,nArray3Num);
-		pArray3=NULL;
+		free_arr03(tm,nArray3Num);
+		tm = NULL ;
 	}
 	system("pause");
-
+	return 1;
 }

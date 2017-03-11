@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{490009A9-2DCB-4BBE-9AA3-A203FD2EB10E}</ProjectGuid>
+    <ProjectGuid>{3D647082-8F4C-4E34-88BD-0793EA616DD0}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>TestRecord</RootNamespace>
+    <RootNamespace>MyTestLib</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -54,6 +54,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>socketclientwwb.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -74,14 +75,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="demo04_二级指针.c" />
-    <ClCompile Include="demo05_二级指针易错.c" />
-    <ClCompile Include="demo06_二级指针结构体.c" />
-    <ClCompile Include="demo07_多级指针.c" />
-    <ClCompile Include="test01_bak.c" />
-    <ClCompile Include="test01_考试.c" />
-    <ClCompile Include="test02_考试.c" />
-    <ClCompile Include="test03_隐患.c" />
+    <ClCompile Include="testlib.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="clientsocketwwb.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

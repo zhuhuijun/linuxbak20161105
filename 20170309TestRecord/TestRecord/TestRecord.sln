@@ -3,6 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestRecord", "TestRecord\TestRecord.vcxproj", "{490009A9-2DCB-4BBE-9AA3-A203FD2EB10E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestLib", "TestLib\TestLib.vcxproj", "{955193CF-5D1D-497E-B38D-00F763BBA30D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "socketclientwwb", "socketclientwwb\socketclientwwb.vcxproj", "{0F8389E3-A9EA-4149-95D5-76587D56E9D1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestLib2", "TestLib2\TestLib2.vcxproj", "{2C20ECA3-C50F-4B43-B28F-7B2479B1E566}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +19,18 @@ Global
 		{490009A9-2DCB-4BBE-9AA3-A203FD2EB10E}.Debug|Win32.Build.0 = Debug|Win32
 		{490009A9-2DCB-4BBE-9AA3-A203FD2EB10E}.Release|Win32.ActiveCfg = Release|Win32
 		{490009A9-2DCB-4BBE-9AA3-A203FD2EB10E}.Release|Win32.Build.0 = Release|Win32
+		{955193CF-5D1D-497E-B38D-00F763BBA30D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{955193CF-5D1D-497E-B38D-00F763BBA30D}.Debug|Win32.Build.0 = Debug|Win32
+		{955193CF-5D1D-497E-B38D-00F763BBA30D}.Release|Win32.ActiveCfg = Release|Win32
+		{955193CF-5D1D-497E-B38D-00F763BBA30D}.Release|Win32.Build.0 = Release|Win32
+		{0F8389E3-A9EA-4149-95D5-76587D56E9D1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0F8389E3-A9EA-4149-95D5-76587D56E9D1}.Debug|Win32.Build.0 = Debug|Win32
+		{0F8389E3-A9EA-4149-95D5-76587D56E9D1}.Release|Win32.ActiveCfg = Release|Win32
+		{0F8389E3-A9EA-4149-95D5-76587D56E9D1}.Release|Win32.Build.0 = Release|Win32
+		{2C20ECA3-C50F-4B43-B28F-7B2479B1E566}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2C20ECA3-C50F-4B43-B28F-7B2479B1E566}.Debug|Win32.Build.0 = Debug|Win32
+		{2C20ECA3-C50F-4B43-B28F-7B2479B1E566}.Release|Win32.ActiveCfg = Release|Win32
+		{2C20ECA3-C50F-4B43-B28F-7B2479B1E566}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -60,7 +60,7 @@ void free_arr(char** arr,int len){
 	}
 }
 
-int main(int argc,char* argv[])
+int main00bak(int argc,char* argv[])
 {
 	int i=0;
 	char **pArray3 = NULL;
