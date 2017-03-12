@@ -2,21 +2,21 @@
 #include "stdlib.h"
 #include "string.h"
 #include "clientsocketwwb.h"
+#include "itcastlog.h"
 
-
-int main(int arg,char* argv[])
+int main01(int arg,char* argv[])
 {
 	int ret;
 	void *handle = NULL;
 
-	unsigned char buf[128];
+	char buf[128]={0};
 	int buflen = 11;
 
 	unsigned char outbuf[128];
 	int outbuflen;
 
 	strcpy(buf,"fafafwtqtggag45353");
-
+	ITCAST_LOG(__FILE__,__LINE__,LogLevel[3],23,"hello,world");
 	ret =  cltSocketInit(&handle);
 	if(ret != 0){
 		printf("cltSocketInit error\n");

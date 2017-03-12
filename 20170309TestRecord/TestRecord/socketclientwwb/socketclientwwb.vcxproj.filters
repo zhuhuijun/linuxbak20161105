@@ -18,9 +18,15 @@
     <ClCompile Include="socketclientwwb.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="itcastlog.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clientsocketwwb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="itcastlog.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

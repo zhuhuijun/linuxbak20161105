@@ -75,10 +75,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="itcastlog.c" />
     <ClCompile Include="testlib.c" />
+    <ClCompile Include="testlib2.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="clientsocketwwb.h" />
+    <ClInclude Include="itcastlog.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
