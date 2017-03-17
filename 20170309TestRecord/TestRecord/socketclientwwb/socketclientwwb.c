@@ -48,6 +48,7 @@ __declspec(dllexport)
 		ITCAST_LOG(__FILE__,__LINE__,LogLevel[3],23,"func cltSocketSend() malloc error,buflen:%d",buflen);
 		return ret;
 	}
+	//
 	memcpy(sh->pbuf,buf,buflen);
 	sh->buflen = buflen;
 	return ret;

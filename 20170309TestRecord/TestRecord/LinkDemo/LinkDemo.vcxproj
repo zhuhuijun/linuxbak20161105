@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{490009A9-2DCB-4BBE-9AA3-A203FD2EB10E}</ProjectGuid>
+    <ProjectGuid>{27FD116F-18E3-4263-BEA1-1CFB245B29C0}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>TestRecord</RootNamespace>
+    <RootNamespace>LinkDemo</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -74,16 +74,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="demo04_二级指针.c" />
-    <ClCompile Include="demo05_二级指针易错.c" />
-    <ClCompile Include="demo06_二级指针结构体.c" />
-    <ClCompile Include="demo07_多级指针.c" />
-    <ClCompile Include="demo08_copy.c" />
-    <ClCompile Include="test01_bak.c" />
-    <ClCompile Include="test01_考试.c" />
-    <ClCompile Include="test02_考试.c" />
-    <ClCompile Include="test03_隐患.c" />
-    <ClCompile Include="test04_考试.c" />
+    <ClCompile Include="demo01_link.c" />
+    <ClCompile Include="demo02_静态链表.c" />
+    <ClCompile Include="demo03_静态链表的局限性.c" />
+    <ClCompile Include="demo04_单向链表.c" />
+    <ClCompile Include="demo05.c" />
+    <ClCompile Include="kernerlisttest01.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="list.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

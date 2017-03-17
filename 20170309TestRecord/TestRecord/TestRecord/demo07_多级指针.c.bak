@@ -9,7 +9,6 @@
 
 int getMem(char ********p8){
 	*p8 = 0x98a;
-	return 1;
 }
 int main7uohj(int argc, char* argv[])
 {	
