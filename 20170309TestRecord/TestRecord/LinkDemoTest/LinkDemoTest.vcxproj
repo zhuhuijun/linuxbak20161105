@@ -10,10 +10,16 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Mylinklist.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="demo01_test.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{27FD116F-18E3-4263-BEA1-1CFB245B29C0}</ProjectGuid>
+    <ProjectGuid>{31177599-9253-480A-ADAA-0B2654A347EA}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>LinkDemo</RootNamespace>
+    <RootNamespace>LinkDemoTest</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -54,6 +60,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>wmblinklist.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -73,18 +80,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="demo01_link.c" />
-    <ClCompile Include="demo02_静态链表.c" />
-    <ClCompile Include="demo03_静态链表的局限性.c" />
-    <ClCompile Include="demo04_单向链表.c" />
-    <ClCompile Include="demo05.c" />
-    <ClCompile Include="demo05_链表的偏移.c" />
-    <ClCompile Include="kernerlisttest01.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="list.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

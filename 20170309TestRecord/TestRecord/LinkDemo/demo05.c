@@ -20,7 +20,7 @@ struct AdvTeacher{
 	AdvLinkList *node;
 };
 //结构体的偏移问题
-int main5001(int argc,char* argv[])
+int main500423231(int argc,char* argv[])
 {
 	int i=0;
 	struct AdvTeacher *p = NULL;

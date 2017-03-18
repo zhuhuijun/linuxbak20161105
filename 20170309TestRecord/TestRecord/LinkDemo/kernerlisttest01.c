@@ -30,7 +30,7 @@ struct teacher_node2 {
 
 
 //栈上静态链表 仅学习语法
-int main()
+int mainshhhhhhhh()
 {
 	struct list_head head, *plist;
 	struct teacher_node a, b;	

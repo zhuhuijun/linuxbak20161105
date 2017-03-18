@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "socketclientwwb", "socketcl
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkDemo", "LinkDemo\LinkDemo.vcxproj", "{27FD116F-18E3-4263-BEA1-1CFB245B29C0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkDemoTest", "LinkDemoTest\LinkDemoTest.vcxproj", "{31177599-9253-480A-ADAA-0B2654A347EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -31,6 +33,10 @@ Global
 		{27FD116F-18E3-4263-BEA1-1CFB245B29C0}.Debug|Win32.Build.0 = Debug|Win32
 		{27FD116F-18E3-4263-BEA1-1CFB245B29C0}.Release|Win32.ActiveCfg = Release|Win32
 		{27FD116F-18E3-4263-BEA1-1CFB245B29C0}.Release|Win32.Build.0 = Release|Win32
+		{31177599-9253-480A-ADAA-0B2654A347EA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{31177599-9253-480A-ADAA-0B2654A347EA}.Debug|Win32.Build.0 = Debug|Win32
+		{31177599-9253-480A-ADAA-0B2654A347EA}.Release|Win32.ActiveCfg = Release|Win32
+		{31177599-9253-480A-ADAA-0B2654A347EA}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

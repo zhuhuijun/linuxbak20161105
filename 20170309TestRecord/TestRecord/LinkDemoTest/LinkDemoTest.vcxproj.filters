@@ -15,31 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo01_link.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="demo02_静态链表.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="demo03_静态链表的局限性.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="demo04_单向链表.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="demo05.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="kernerlisttest01.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="demo05_链表的偏移.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="list.h">
+    <ClInclude Include="Mylinklist.h">
       <Filter>头文件</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="demo01_test.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
