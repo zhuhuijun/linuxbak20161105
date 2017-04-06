@@ -20,6 +20,7 @@ int main(int arg,char* argss[])
 			break;
 		}
 		write(fd,buf,sizeof(buf));
+		memset(buf,0,sizeof(buf));
 	}
 	close(fd);
 	return 1;
