@@ -1,14 +1,13 @@
 .SUFFIXES: .c .o
 CC=gcc
-SRCS=demo02_orphan.c
+SRCS=upper.c
 OBJS=$(SRCS:.c=.o)
-EXE=demo
+EXE=libupper.so
 all: $(OBJS)
-	$(CC) -o $(EXE) $(OBJS)
-	$(CC) -o $(EXE) $(OBJS)
+	$(CC) -shared -o $(EXE) $(OBJS)
 	@echo '--------------OK-------------'
 .c.o:
-	$(CC) -Wall -g -o $@ -c $<
+	$(CC) -Wall -g -fPIC -o $@ -c $<
 clean:
 	-rm -f $(OBJS)
-	-rm -f core*	
+	-rm -f core*
