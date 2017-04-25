@@ -1,7 +1,7 @@
 #ifndef UPPER_H_
 #define UPPER_H_
 #ifdef __cplusplus
-extern "C"{
+extern "C" {
 #endif
 
 	void upper(const char *src, char *desc);
