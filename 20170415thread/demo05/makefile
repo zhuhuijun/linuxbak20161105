@@ -1,6 +1,6 @@
 .SUFFIXES: .c .o
 CC=gcc
-SRCS=demo01_thread.c
+SRCS=demo05_thread.c
 OBJS=$(SRCS:.c=.o)
 EXE=demo
 all: $(OBJS)

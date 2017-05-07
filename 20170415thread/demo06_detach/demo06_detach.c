@@ -10,6 +10,7 @@
 *
 *pthread_exit(NULL);终止线程的用法
 *线程成为可分离状态不能使用thread_join
+*系统会回收资源主线程不等待子进程，主线程并不关心子进程的返回码
 */
 void *func(void *arg)
 {
