@@ -10,21 +10,25 @@
 *
 */
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+int count = 0;
 void *func(void *arg)
 {
-	pthread_mutex_lock(&mutex);
+
 	int *a = (int *)arg;
 	int i = 0 ;
 	printf("thread%d start.....\n",*a);
 	for (;i<10;i++){
 		printf("thread%d-%d\n",*a,i );
+		pthread_mutex_lock(&mutex);
+		count ++;
+		printf("count==%d\n", count);
+		pthread_mutex_unlock(&mutex);
 		sleep(1);
 	}
 	printf("thread%d end.....\n",*a);
-	pthread_mutex_unlock(&mutex);
+
 	pthread_exit(NULL);
 }
-
 
 int main(int argc,char *args[])
 {
