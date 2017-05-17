@@ -34,6 +34,7 @@ int main(int argc,char *args[])
 		printf("send failed %s\n",strerror(errno) );
 		return -1;
 	}
+	sleep(100);
 	close(st);
 
 	return 1;
