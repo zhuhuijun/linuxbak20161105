@@ -10,6 +10,11 @@
 int main(int argc,char *args[])
 {
 	int st = socket(AF_INET,SOCK_STREAM,0);
+	int on = 1;
+	if (setsocketopt(st,SOL_SOCKET,SO_REUSEADDR,&on,sizeof(on)) == -1){
+		printf("setsocketopt failed%s\n",strerror(errno) );
+		return -1;
+	}
 	struct sockaddr_in addr;
 	if (st == -1){
 		printf("create socket error: %s",strerror(errno));
