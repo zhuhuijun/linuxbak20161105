@@ -11,7 +11,7 @@ int main(int argc,char *args[])
 {
 	int st = socket(AF_INET,SOCK_STREAM,0);
 	int on = 1;
-	if (setsocketopt(st,SOL_SOCKET,SO_REUSEADDR,&on,sizeof(on)) == -1){
+	if (setsockopt(st,SOL_SOCKET,SO_REUSEADDR,&on,sizeof(on)) == -1){
 		printf("setsocketopt failed%s\n",strerror(errno) );
 		return -1;
 	}
@@ -54,6 +54,7 @@ int main(int argc,char *args[])
 			printf("accept failed %s\n",strerror(errno) );
 			return -1;
 		}
+		printf("accept form %s:",inet_ntoa(client_addr.sin_addr));
 		while(1){
 			memset(s,0,sizeof(s));
 			int rc = recv(client_st,s,sizeof(s),0);
