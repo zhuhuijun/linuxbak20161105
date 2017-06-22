@@ -16,9 +16,38 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
+#include <pthread.h>
+/*****************************************/
+//接收client端socket的线程
+void *recvfunc(void *arg){
+	int st = *(int * )arg;
+	char s[1024];
+	while(1){
+		memset(s,0,sizeof(s));
+		int rc = recv(st,s,sizeof(s),0);
+		if (rc <=0 ){
+			break;//代表关闭或者出错了
+		}else{
+			printf("%s\n",s );
+		}
+	}
+	return NULL;
+}
+/*****************************************/
+//向client端socket发送数据的线程
+void *sendfunc(void *arg){
+	int st = *(int * )arg;
+	char s[1024];
+	while(1){
+		memset(s,0,sizeof(s));
+		read(STDIN_FILENO,s,sizeof(s));
+		send(st,s,strlen(s),0);
+	}
+	return NULL;
+}
 int main(int argc,char *args[])
 {
-	if (args < 3)
+	if (argc < 3)
 		return -1;
 
 	int port = atoi(args[2]);
@@ -39,25 +68,11 @@ int main(int argc,char *args[])
 		printf("connect error %s\n",strerror(errno) );
 		return -1;
 	}
-	char s[1024];
-	while(1){
-		memset(s,0,sizeof(s));
-
-		read(STDIN_FILENO,s,sizeof(s));
-
-		if (send(st,s,strlen(s),0) == -1)
-		{
-			printf("send failed %s\n",strerror(errno) );
-			return -1;
-		}
-		memset(s,0,sizeof(1024));
-		if ( recv(st,s,sizeof(s),0 ) > 0){
-			printf("client-receive:%s\n",s );//如果接收数据失败循环break;
-		}
-		else{
-			break;
-		}
-	}
+	pthread_t thrdrecv,thrdsend;
+	pthread_create(&thrdrecv,NULL,recvfunc,&st);//客户端端接收服务端的线程
+	pthread_create(&thrdsend,NULL,sendfunc,&st);//客户端向服务端发送的线程
+	pthread_join(thrdrecv,NULL);//等待防止退出
+	pthread_join(thrdsend,NULL);
 	close(st);
 	return 1;
 }

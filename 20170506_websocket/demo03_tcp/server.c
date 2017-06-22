@@ -7,9 +7,38 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
+#include <pthread.h>
+/*****************************************/
+//接收client端socket的线程
+void *recvfunc(void *arg){
+	int st = *(int * )arg;
+	char s[1024];
+	while(1){
+		memset(s,0,sizeof(s));
+		int rc = recv(st,s,sizeof(s),0);
+		if (rc <=0 ){
+			break;//代表关闭或者出错了
+		}else{
+			printf("%s\n",s );
+		}
+	}
+	return NULL;
+}
+/*****************************************/
+//向client端socket发送数据的线程
+void *sendfunc(void *arg){
+	int st = *(int * )arg;
+	char s[1024];
+	while(1){
+		memset(s,0,sizeof(s));
+		read(STDIN_FILENO,s,sizeof(s));
+		send(st,s,strlen(s),0);
+	}
+	return NULL;
+}
 int main(int argc,char *args[])
 {
-	if (args < 2)
+	if (argc < 2)
 	{
 		return -1;
 	}
@@ -47,11 +76,10 @@ int main(int argc,char *args[])
 	char s[1024];
 	memset(s,0,sizeof(s));
 	int client_st = 0; //client 端
-	socklen_t len = 0;
 	struct sockaddr_in client_addr;
 	void *p = &client_addr;
-	int i = 0;
-	for (i=0;i < 5 ; i++){
+	pthread_t thrdrecv,thrdsend;
+	while (1){
 		memset(&client_addr ,0, sizeof(client_addr));
 		socklen_t len = sizeof(client_addr);
 		//accept会阻塞直到有客户端连到这里
@@ -61,24 +89,8 @@ int main(int argc,char *args[])
 			return -1;
 		}
 		printf("accept form :%s\n",inet_ntoa(client_addr.sin_addr));
-		while(1){
-			memset(s,0,sizeof(s));
-			int rc = recv(client_st,s,sizeof(s),0);
-			if ( rc >0){
-				printf("server>>>>recv:%s\n",s );
-				memset(s,0,sizeof(s));
-				read (STDIN_FILENO,s ,sizeof(s));
-				//send(client_st,"加工资就算了\n",strlen("加工资就算了\n"),0);
-				send(client_st,s,strlen(s),0);
-			}else{
-				if (rc == 0 ){
-					printf("client  close success \n" );
-				}else
-				printf("recv failed %s\n",strerror(errno) );
-				break;
-			}
-		}
-		close(client_st);
+		pthread_create(&thrdrecv,NULL,recvfunc,&client_st);
+		pthread_create(&thrdsend,NULL,sendfunc,&client_st);
 	}
 	close(st);
 
