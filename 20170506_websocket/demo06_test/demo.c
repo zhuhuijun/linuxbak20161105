@@ -72,7 +72,7 @@ int main(int argc,char *args[])
 	pthread_create(&thrdrecv,NULL,recvfunc,&st);//客户端端接收服务端的线程
 	pthread_create(&thrdsend,NULL,sendfunc,&st);//客户端向服务端发送的线程
 	pthread_join(thrdrecv,NULL);//等待防止退出
-	//pthread_join(thrdsend,NULL);
+	//pthread_join(thrdsend,NULL);//如果等待着就不会退出了
 	close(st);
 	return 1;
 }

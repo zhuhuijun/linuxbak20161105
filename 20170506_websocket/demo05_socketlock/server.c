@@ -14,7 +14,6 @@ struct  psparam
 	int st;
 	pthread_t *thr;
 };
-pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 /*****************************************/
 //接收client端socket的线程
 void *recvfunc(void *arg){
@@ -31,10 +30,8 @@ void *recvfunc(void *arg){
 			printf("%s\n",s );
 		}
 	}
-	pthread_mutex_lock(&mutex);
 	status = 0;
-	pthread_mutex_unlock(&mutex);
-	pthread_cancel(*(p->thr));//被cancel得线程内部没有使用lock
+	pthread_cancel(*(p->thr));
 	return NULL;
 }
 /*****************************************/
@@ -97,9 +94,7 @@ int main(int argc,char *args[])
 		socklen_t len = sizeof(client_addr);
 		//accept会阻塞直到有客户端连到这里
 		client_st = accept (st,(struct sockaddr *)&client_addr,&len);
-		pthread_mutex_lock(&mutex);
 		status ++;
-		pthread_mutex_unlock(&mutex);
 		if (status >1){//这是第二次的连接了
 			close(client_st);
 			continue;
@@ -113,9 +108,7 @@ int main(int argc,char *args[])
 		ps1.st = client_st;
 		ps1.thr = &thrdsend;
 		pthread_create(&thrdrecv,NULL,recvfunc,&ps1);//服务端接收客户端的线程
-		pthread_detach(thrdrecv);//设置线程可分离
 		pthread_create(&thrdsend,NULL,sendfunc,&client_st);//服务端向客户端发送的线程
-		pthread_detach(thrdsend);//设置线程可分离
 	}
 	close(st);
 
