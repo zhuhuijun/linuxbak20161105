@@ -25,6 +25,7 @@ void getfilename(const char *filename,char *name)
 		}
 	}
 	strcpy(name,&filename[i+1]);
+	return ;
 }
 
 
